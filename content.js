@@ -15,8 +15,6 @@ function checkForAds() {
             wasAdPlaying = true; 
         }
     } else {
-        console.log("No ad detected or ad has ended");
-
         if (wasAdPlaying && mainVideoContainer && mainVideoContainer.getAttribute('aria-hidden') === 'false') {
             if (mainVideo && mainVideo.muted) {
                 if (muteButton) {
